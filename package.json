@@ -1,0 +1,21 @@
+{
+  "name": "pi-clean-copy",
+  "version": "0.1.1",
+  "type": "module",
+  "description": "Conservative plain-text cleanup for Pi fullscreen selection copy",
+  "author": "Fede",
+  "license": "MIT",
+  "repository": { "type": "git", "url": "git+https://github.com/aimagist/pi-clean-copy.git" },
+  "homepage": "https://github.com/aimagist/pi-clean-copy#readme",
+  "bugs": { "url": "https://github.com/aimagist/pi-clean-copy/issues" },
+  "keywords": ["pi-package", "pi-extension", "clipboard", "windows-terminal"],
+  "engines": { "node": ">=22.19.0" },
+  "publishConfig": { "access": "public" },
+  "pi": { "extensions": ["./index.ts"] },
+  "files": ["clean.ts", "hook.ts", "index.ts", "selection.ts", "README.md", "CHANGELOG.md", "LICENSE", "test/"],
+  "scripts": { "test": "node --test test/*.test.ts" },
+  "peerDependencies": {
+    "@earendil-works/pi-coding-agent": "*",
+    "@earendil-works/pi-tui": "*"
+  }
+}
